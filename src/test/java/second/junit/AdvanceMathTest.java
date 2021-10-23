@@ -1,4 +1,3 @@
-
 package second.junit;
 
 import org.junit.Assert;
