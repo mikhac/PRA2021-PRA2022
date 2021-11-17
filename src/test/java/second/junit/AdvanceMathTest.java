@@ -1,5 +1,6 @@
 package second.junit;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,6 +10,7 @@ import static org.junit.Assert.assertTrue;
 public class AdvanceMathTest {
 
     AdvanceMath math;
+    final static Logger logger = Logger.getLogger(AdvanceMath.class);
 
     @Before
     public void setUp() {
