@@ -1,5 +1,9 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,15 +15,17 @@ public class Employee {
 
     private String lastName;
 
+    @JsonProperty("pieniadz")
     private int salary;
 
+    @JsonIgnore
     private int pesel;
 
     Address address;
 
     private List<Employee> managers = new ArrayList<>();
 
-    private List<Employee>  subworkers = new ArrayList<>();
+    private List<Employee> subworkers = new ArrayList<>();
 
     public Employee() {}
 

@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+
 public class JacksonSerialization {
 
     final static Logger logger = Logger.getLogger(JacksonSerialization.class);
@@ -67,5 +68,3 @@ public class JacksonSerialization {
 
     }
 }
-
-

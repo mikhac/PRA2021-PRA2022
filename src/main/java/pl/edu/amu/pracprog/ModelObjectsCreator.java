@@ -64,12 +64,9 @@ public class ModelObjectsCreator {
         employees = new ArrayList<Employee>();
         employees.add(emp);
         employees.add(emp2);
-
     }
 
     public ModelObjectsCreator(){
         init();
     }
-
-
 }
